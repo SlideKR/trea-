@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Rincón Chileno</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>El Rincón Chileno</h1>
+    <nav><ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#about">Nosotros</a></li>
+    </ul></nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h2>Bienvenido a El Rincón Chileno</h2>
+        <p>Sabores auténticos de Chile en tu mesa</p>
+      </div>
+    </section>
+
+    <section id="productos">
+      <article class="producto">
+        <h3>Pastel de Choclo</h3>
+        <p>Tradicional pastel con carne, pollo y cobertura de choclo molido.</p>
+        <span class="precio">$12.990</span>
+      </article>
+      <article class="producto">
+        <h3>Empanadas de Pino</h3>
+        <p>Jugosas empanadas rellenas de carne molida, cebolla y aceitunas.</p>
+        <span class="precio">$4.990</span>
+      </article>
+      <article class="producto">
+        <h3>Cazuela de Mariscos</h3>
+        <p>Deliciosa cazuela con variedad de mariscos frescos de la costa.</p>
+        <span class="precio">$16.990</span>
+      </article>
+    </section>
+
+    <section id="contacto">
+      <h2>Reserva tu Mesa</h2>
+      <form class="formulario-reserva">
+        <div class="campo-formulario">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="personas">Número de personas:</label>
+          <input type="number" id="personas" name="personas" min="1" max="20" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="fecha">Fecha de reserva:</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <button type="submit" class="btn-reserva">Reservar Mesa</button>
+      </form>
+    </section>
+
+    <section id="about" class="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>El Rincón Chileno es un restaurante familiar con más de 15 años de trayectoria. 
+        Nos dedicamos a preparar los mejores platos típicos de Chile con ingredientes 
+        frescos y recetas tradicionales transmitidas de generación en generación.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>📞 +56 2 2345 6789</p>
+        <p>📧 info@rincónchileno.cl</p>
+      </div>
+      <div class="footer-section">
+        <h3>Ubicación</h3>
+        <p>Calle Independencia 1245</p>
+        <p>Santiago, Chile</p>
+      </div>
+      <div class="footer-section">
+        <h3>Horarios</h3>
+        <p>Lunes a Viernes: 12:00 - 22:00</p>
+        <p>Sábados: 12:00 - 23:00</p>
+        <p>Domingos: 12:00 - 21:00</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 El Rincón Chileno. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
